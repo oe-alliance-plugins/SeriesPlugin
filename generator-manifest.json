@@ -1,0 +1,19 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "Find and rename series",
+  "description_recipe": "",
+  "history_source_dir": "seriesplugin",
+  "internal_package_name": "enigma2-plugin-extensions-seriesplugin",
+  "module_dir_name": "SeriesPlugin",
+  "output_subdir": "seriesplugin",
+  "package_name": "enigma2-plugin-extensions-seriesplugin",
+  "plugin_src_rel": "seriesplugin",
+  "python_package": "SeriesPlugin",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "SeriesPlugin",
+  "rrecommends": "",
+  "rreplaces": "",
+  "selected_from_plugin_list": true
+}
