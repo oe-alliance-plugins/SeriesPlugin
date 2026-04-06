@@ -17,11 +17,9 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
-import sys
 from time import time
 
-from Components.config import *
+from Components.config import config
 
 from .Logger import log
 

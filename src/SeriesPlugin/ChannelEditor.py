@@ -99,25 +99,25 @@ class MatchList(MenuList):
 		size = self.l.getItemSize()
 
 		if int(status) == 0:
-			imageStatus = path = os.path.join(PIXMAP_PATH, "minus.png")
+			imageStatus = os.path.join(PIXMAP_PATH, "minus.png")
 		else:
-			imageStatus = path = os.path.join(PIXMAP_PATH, "plus.png")
+			imageStatus = os.path.join(PIXMAP_PATH, "plus.png")
 
-		l = [(stbSender, webSender, serviceref, status), ]
+		items = [(stbSender, webSender, serviceref, status), ]
 
 		pos = self.margin + self.iconPosX
-		l.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, pos, self.iconPosY, self.iconSize, self.iconSize, loadPNG(imageStatus)))
+		items.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, pos, self.iconPosY, self.iconSize, self.iconSize, loadPNG(imageStatus)))
 
 		pos += self.iconSize + self.margin
-		l.append((eListboxPythonMultiContent.TYPE_TEXT, pos, 0, self.colWidthStb, self.itemHeight, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, stbSender))
+		items.append((eListboxPythonMultiContent.TYPE_TEXT, pos, 0, self.colWidthStb, self.itemHeight, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, stbSender))
 
 		pos += self.colWidthStb + self.margin
-		l.append((eListboxPythonMultiContent.TYPE_TEXT, pos, 0, self.colWidthWeb, self.itemHeight, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, webSender))
+		items.append((eListboxPythonMultiContent.TYPE_TEXT, pos, 0, self.colWidthWeb, self.itemHeight, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, webSender))
 
 		pos += self.colWidthWeb + self.margin
-		l.append((eListboxPythonMultiContent.TYPE_TEXT, pos, 0, size.width() - pos, self.itemHeight, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, "", colorYellow))
+		items.append((eListboxPythonMultiContent.TYPE_TEXT, pos, 0, size.width() - pos, self.itemHeight, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, "", colorYellow))
 
-		return l
+		return items
 
 
 class ChannelEditor(Screen, HelpableScreen, ChannelsBase, WebChannels):
@@ -226,7 +226,7 @@ class ChannelEditor(Screen, HelpableScreen, ChannelsBase, WebChannels):
 			temp = []
 		self.webChlist = sorted(temp, key=lambda tup: tup[0])
 
-	def getChannelByRef(ref):
+	def getChannelByRef(self, ref):
 		if self.stbChlist:
 			for servicename, serviceref, uservicename in self.stbChlist:
 				if serviceref == ref:
