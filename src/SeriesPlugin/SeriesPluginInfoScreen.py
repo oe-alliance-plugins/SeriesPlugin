@@ -17,7 +17,6 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
 import os
 import re
 
@@ -31,7 +30,6 @@ from datetime import datetime
 from Components.config import config
 
 from Screens.Screen import Screen
-from Screens.Setup import SetupSummary
 from Screens.MessageBox import MessageBox
 from Screens.ChannelSelection import ChannelSelectionBase
 
@@ -52,7 +50,6 @@ from Screens.TimerEdit import TimerSanityConflict
 from Tools.BoundFunction import boundFunction
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 
-from skin import loadSkin
 from enigma import getDesktop
 
 # Plugin internal
@@ -414,9 +411,9 @@ class SeriesPluginInfoScreen(Screen):
 			else:
 				self["key_red"].setText("")
 				self.redButtonFunction = None
-		except Exception:
+		except Exception as e:
 			# Screen already closed
-			log.debug("exception:", str(e))
+			log.debug("exception:", e)
 
 	def redButton(self):
 		if callable(self.redButtonFunction):
@@ -464,7 +461,7 @@ class SeriesPluginInfoScreen(Screen):
 
 		for timer in self.session.nav.RecordTimer.timer_list:
 			if timer.eit == eventid and timer.service_ref.ref.toString() == refstr:
-				cb_func = lambda ret: not ret or self.removeTimer(timer)
+				cb_func = lambda ret: not ret or self.removeTimer(timer)  # noqa E731
 				self.session.openWithCallback(cb_func, MessageBox, _("Do you really want to delete %s?") % event.getEventName())
 				return
 

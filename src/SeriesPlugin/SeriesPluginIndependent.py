@@ -18,13 +18,13 @@
 #######################################################################
 
 #TODO Add optional popup
+from time import strftime
 
 # for localized messages
-from __future__ import absolute_import
 from . import _
 
 # Config
-from Components.config import *
+from Components.config import config
 
 import NavigationInstance
 from enigma import eTimer

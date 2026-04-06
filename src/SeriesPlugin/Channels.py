@@ -17,8 +17,6 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
-import os
 import re
 
 # Config
@@ -28,7 +26,7 @@ from enigma import eServiceReference, eServiceCenter
 from ServiceReference import ServiceReference
 
 # XML
-from xml.etree.cElementTree import ElementTree, parse, Element, SubElement, Comment
+from xml.etree.cElementTree import ElementTree, Element, SubElement, Comment
 from Tools.XMLTools import stringToXML
 
 # Plugin internal

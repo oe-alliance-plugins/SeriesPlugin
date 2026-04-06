@@ -1,15 +1,7 @@
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import
 from .__init__ import _
 
-import sys
 import os
-import base64
-import re
-import time
-import shutil
-import datetime
-import codecs
 
 from Components.ActionMap import ActionMap, HelpableActionMap
 from Components.MenuList import MenuList
@@ -23,12 +15,9 @@ from Screens.HelpMenu import HelpableScreen
 from Screens.ChoiceBox import ChoiceBox
 from Screens.MessageBox import MessageBox
 
-from enigma import eListboxPythonMultiContent, eListbox, gFont, RT_HALIGN_LEFT, RT_HALIGN_RIGHT, RT_HALIGN_CENTER, loadPNG, RT_WRAP, RT_VALIGN_CENTER, RT_VALIGN_TOP, RT_VALIGN_BOTTOM
+from enigma import eListboxPythonMultiContent, gFont, RT_HALIGN_LEFT, loadPNG, RT_VALIGN_CENTER
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_CURRENT_PLUGIN
-from twisted.web import client, error as weberror
-from twisted.internet import reactor, defer
-from skin import parseColor, parseFont, parseSize
-from urllib.parse import urlencode
+from skin import parseFont
 
 try:
 	from skin import TemplatedListFonts

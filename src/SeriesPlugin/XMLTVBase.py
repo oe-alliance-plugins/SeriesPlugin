@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 # by betonme @2015
 
-from __future__ import absolute_import
 import os
-import re
 
 # Config
 from Components.config import config
 
 # XML
-from xml.etree.cElementTree import ElementTree, parse, Element, SubElement, Comment
-from Tools.XMLTools import stringToXML
+from xml.etree.cElementTree import ElementTree, Element, SubElement, Comment
 
 # Plugin internal
 from . import _
@@ -18,7 +15,7 @@ from .XMLFile import XMLFile, indent
 from .Logger import log
 
 
-class XMLTVBase(object):
+class XMLTVBase:
 
 	def __init__(self):
 

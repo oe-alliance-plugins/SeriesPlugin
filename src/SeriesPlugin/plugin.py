@@ -1,18 +1,11 @@
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import
-import os
-import sys
-import traceback
 
 # Localization
 from . import _
 
-from time import time
-
 from Components.config import config
 
 # Plugin
-from Components.PluginComponent import plugins
 from Plugins.Plugin import PluginDescriptor
 
 # Plugin internal
@@ -182,7 +175,7 @@ def showTimerInfo(session, timer, *args, **kwargs):
 	if config.plugins.seriesplugin.enabled.value:
 		from enigma import eEPGCache
 		try:
-			event = timer.eit and epgcache.lookupEventId(timer.service_ref.ref, timer.eit)
+			event = timer.eit and eEPGCache.getInstance().lookupEventId(timer.service_ref.ref, timer.eit)
 			session.open(SeriesPluginInfoScreen, timer.service_ref, event)
 		except Exception as e:
 			log.exception(_("SeriesPlugin info exception ") + str(e))

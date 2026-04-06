@@ -2,12 +2,6 @@
 # by betonme @2012
 
 # Imports
-import re
-
-from Components.config import config
-
-from time import time, mktime
-from datetime import datetime
 
 # Internal
 from Plugins.Extensions.SeriesPlugin.__init__ import _

@@ -1,19 +1,15 @@
 # -*- coding: utf-8 -*-
 # by betonme @2012
 
-from __future__ import absolute_import
 import re
 
 import os
-import sys
 
 from time import localtime, strftime
 from datetime import datetime
 
 # Localization
 from . import _
-
-from datetime import datetime
 
 from Components.config import config
 
@@ -42,7 +38,7 @@ try:
 	if (config.plugins.autotimer.timeout.value == 1):
 		config.plugins.autotimer.timeout.value = 5
 		config.plugins.autotimer.save()
-except Exception as e:
+except Exception:
 	pass
 
 
@@ -112,7 +108,7 @@ def getInstance():
 
 		# Check autotimer
 		try:
-			from Plugins.Extensions.AutoTimer.plugin import autotimer
+			from Plugins.Extensions.AutoTimer.plugin import autotimer  # noqa F401
 			deprecated = False
 			try:
 				from Plugins.Extensions.AutoTimer.plugin import AUTOTIMER_VERSION

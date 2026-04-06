@@ -17,21 +17,15 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
-import os
-
 # for localized messages
 from . import _
 
 from time import time
 from enigma import eEPGCache
-from ServiceReference import ServiceReference
 
 # Config
-from Components.config import *
+from Components.config import config
 
-from Screens.MessageBox import MessageBox
-from Tools.Notifications import AddPopup
 from Tools.BoundFunction import boundFunction
 
 # Plugin internal

@@ -17,7 +17,6 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
 import os
 
 
@@ -25,10 +24,9 @@ import os
 from . import _
 
 # Config
-from Components.config import *
+from Components.config import config, getConfigListEntry, ConfigSelection, NoSave
 from Components.ConfigList import ConfigListScreen
 from Components.Button import Button
-from Components.Sources.StaticText import StaticText
 
 from Components.ActionMap import ActionMap
 from Screens.MessageBox import MessageBox
@@ -41,7 +39,7 @@ from Plugins.Plugin import PluginDescriptor
 
 # Plugin internal
 from .SeriesPlugin import resetInstance, getInstance
-from .SeriesPluginIndependent import startIndependent, stopIndependent
+from .SeriesPluginIndependent import stopIndependent
 from .FilePatterns import readFilePatterns
 from .DirectoryPatterns import readDirectoryPatterns
 from .Logger import log

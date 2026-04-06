@@ -2,8 +2,7 @@
 
 from Components.config import config, ConfigSubsection, ConfigOnOff, ConfigNumber, ConfigSelection, ConfigYesNo, ConfigText, ConfigSelectionNumber
 from Components.Language import language
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
-from os import environ as os_environ
+from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 import gettext
 
 
@@ -98,12 +97,12 @@ config.plugins.seriesplugin.xmltv_url = ConfigText(default='http://www.serienser
 
 
 def localeInit():
-	lang = language.getLanguage()[:2]  # getLanguage returns e.g. "fi_FI" for "language_country"
-	os_environ["LANGUAGE"] = lang      # Enigma doesn't set this (or LC_ALL, LC_MESSAGES, LANG). gettext needs it!
 	gettext.bindtextdomain("SeriesPlugin", resolveFilename(SCOPE_PLUGINS, "Extensions/SeriesPlugin/locale"))
 
 
-_ = lambda txt: gettext.dgettext("SeriesPlugin", txt) if txt else ""
+def _(txt):
+	return gettext.dgettext("SeriesPlugin", txt) if txt else ""
+
 
 localeInit()
 language.addCallback(localeInit)

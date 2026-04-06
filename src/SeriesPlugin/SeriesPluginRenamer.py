@@ -17,7 +17,6 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
 import os
 import re
 from glob import glob  # Py3 ,escape
@@ -29,7 +28,6 @@ from . import _
 from Components.config import config
 
 from Screens.MessageBox import MessageBox
-from Tools.Notifications import AddPopup
 
 from Tools.BoundFunction import boundFunction
 from Tools.ASCIItranslit import ASCIItranslit
@@ -290,10 +288,8 @@ class SeriesPluginRenamer(object):
 	def renamerCallback(self, servicepath, name, short, data=None):
 		log.debug("renamerCallback", name, data)
 
-		result = None
-
 		if data and isinstance(data, dict):
-			result = rename(servicepath, name, short, data)
+			rename(servicepath, name, short, data)
 
 		elif data and isinstance(data, str):
 			msg = _("Failed: %s." % (str(data)))

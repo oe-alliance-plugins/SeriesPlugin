@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 # by betonme @2012
 
-from __future__ import absolute_import
-
 #TODO Implement Twisted handler
 #Twisted 12.x
 #from twisted.web.client import getPage as twGetPage
@@ -12,17 +10,15 @@ from __future__ import absolute_import
 #Twisted All
 #from twisted.python.failure import Failure
 
-from time import sleep
 
 from time import time
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from Components.config import config
 
 # Internal
 from .ModuleBase import ModuleBase
 from .Cacher import Cacher
-from .Logger import log
 
 
 class MyException(Exception):

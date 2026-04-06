@@ -17,20 +17,13 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
 import os
-import re
-
-# Config
-from Components.config import config
 
 
 # XML
-from xml.etree.cElementTree import ElementTree, parse, Element, SubElement, Comment
-from Tools.XMLTools import stringToXML
+from xml.etree.cElementTree import parse
 
 # Plugin internal
-from . import _
 from .Logger import log
 
 
@@ -105,7 +98,6 @@ class XMLFile(object):
 		except Exception as e:
 			log.exception("Exception in write XML: " + str(e))
 			etree = None
-			mtime = -1
 
 		# Save time and cache file content
 		self.__mtime = os.path.getmtime(path)

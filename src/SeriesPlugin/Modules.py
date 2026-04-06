@@ -17,7 +17,6 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
 import os
 import sys
 import traceback
@@ -29,7 +28,6 @@ import importlib.util
 import inspect
 
 # Plugin internal
-from . import _
 from .Logger import log
 
 # Constants

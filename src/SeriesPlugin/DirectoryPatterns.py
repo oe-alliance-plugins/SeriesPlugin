@@ -17,15 +17,11 @@
 #
 #######################################################################
 
-from __future__ import absolute_import
 import os
 import json
 
-# for localized messages
-from . import _
-
 # Config
-from Components.config import *
+from Components.config import config
 
 # Plugin internal
 from .Logger import log
@@ -65,7 +61,7 @@ scheme_fallback = [
 
 def readDirectoryPatterns():
 	path = config.plugins.seriesplugin.pattern_file_directories.value
-	obj = None
+	#obj = None
 	patterns = None
 
 	if os.path.exists(path):
@@ -73,7 +69,7 @@ def readDirectoryPatterns():
 		f = None
 		try:
 			f = open(path, 'rb')
-			header, patterns = json.load(f)
+			_, patterns = json.load(f)
 			patterns = [tuple(p) for p in patterns]
 		except Exception as e:
 			log.exception(_("Your pattern file is corrupt") + "\n" + path + "\n\n" + str(e))

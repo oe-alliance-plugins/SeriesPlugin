@@ -1,19 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
-import sys
-import traceback
-
-
-# Config
-from Components.config import *
-from Components.Sources.StaticText import StaticText
 
 # Screen
 from Components.ActionMap import ActionMap
 from Components.ScrollLabel import ScrollLabel
-from enigma import eSize, ePoint, getDesktop
+from enigma import ePoint
 from Screens.Screen import Screen
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
+from Tools.Directories import fileExists
 
 # Plugin internal
 from . import _
@@ -23,8 +16,6 @@ class ShowLogScreen(Screen):
 	def __init__(self, session, logFile):
 		Screen.__init__(self, session)
 		self.skinName = ["TestBox", "Console"]
-		title = ""
-		text = ""
 		self.logFile = logFile
 
 		self["text"] = ScrollLabel("")

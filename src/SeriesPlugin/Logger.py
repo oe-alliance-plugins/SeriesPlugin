@@ -17,12 +17,8 @@
 #
 #######################################################################
 
-from __future__ import print_function
-from . import _
-
 import logging
 
-import os
 import sys
 import traceback
 
@@ -36,7 +32,7 @@ from threading import currentThread
 log = None
 
 
-class Logger(object):
+class Logger:
 	def __init__(self):
 		self.local_log = ""
 		self.local_log_enabled = False
