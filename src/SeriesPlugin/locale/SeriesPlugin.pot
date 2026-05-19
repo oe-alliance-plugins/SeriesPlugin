@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the SeriesPlugin package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: SeriesPlugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-14 08:00+0100\n"
+"POT-Creation-Date: 2026-05-19 16:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,522 +17,687 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../ShowLogScreen.py:53
 msgid ""
 "\n"
 "Cancel?"
 msgstr ""
 
+#: ../plugin.py:35
 msgid ""
 "  (C) 2012 by betonme @ IHAD \n"
 "\n"
 msgstr ""
 
+#: ../plugin.py:40
 msgid "  Feel free to donate. \n"
 msgstr ""
 
+#: ../plugin.py:38
 msgid ""
 "  How much time have You saved?\n"
 "\n"
 msgstr ""
 
+#: ../plugin.py:41
 msgid "  PayPal: "
 msgstr ""
 
+#: ../plugin.py:39
 msgid "  Support: "
 msgstr ""
 
+#: ../plugin.py:36
 msgid "  Terms: "
 msgstr ""
 
+#: ../plugin.py:37
 #, python-brace-format
 msgid "  {lookups:d} successful lookups.\n"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:354
 #, python-format
 msgid "%d min"
 msgstr ""
 
+#: ../SeriesPluginRenamer.py:318
 #, python-format
 msgid "%d records renamed successfully"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:194
 #, python-format
 msgid "%d timer renamed successfully"
 msgstr ""
 
+#: ../ChannelEditor.py:318
 msgid "Add Web Channel"
 msgstr ""
 
+#: ../ChannelEditor.py:342
 msgid "Add channel (Yes) or replace it (No)"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:232
 msgid "Add tag 'SeriesPlugin' to timer"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:219
 msgid "Append '_' if file exist"
 msgstr ""
 
+#: ../ChannelEditor.py:147 ../ChannelEditor.py:169
 msgid "Auto match"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:227
 msgid "AutoTimer independent mode"
 msgstr ""
 
+#: ../SeriesPlugin.py:425 ../SeriesPlugin.py:439 ../SeriesPluginRenamer.py:187
+#: ../SeriesPluginTimer.py:67
 msgid "Can be configured within the setup"
 msgstr ""
 
+#: ../ChannelEditor.py:144 ../SeriesPluginConfiguration.py:81
 msgid "Cancel"
 msgstr ""
 
+#: ../ChannelEditor.py:152 ../ChannelEditor.py:166
 msgid "Cancel and close"
 msgstr ""
 
+#: ../ChannelEditor.py:336 ../ChannelEditor.py:352
 #, python-format
 msgid "Channel '- %(servicename)s - %(remote)s -' added."
 msgstr ""
 
+#: ../ChannelEditor.py:358
 #, python-format
 msgid "Channel '- %(servicename)s - %(remote)s -' replaced."
 msgstr ""
 
+#: ../ChannelEditor.py:383
 #, python-format
 msgid "Channel '- %s -' removed."
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:84
 msgid "Channel Edit"
 msgstr ""
 
+#: ../ChannelEditor.py:141 ../Skins/ChannelEditor.xml
 msgid "Channel Editor"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:245
 msgid "Channel matching file"
 msgstr ""
 
+#: ../ChannelEditor.py:256
 msgid "Channel matching..."
 msgstr ""
 
+#: ../SeriesPlugin.py:464
 msgid "Channels are not matched"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:231
 msgid "Check Timer for corresponding EPG events"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:229
 msgid "Check timer every x minutes"
 msgstr ""
 
+#: ../plugin.py:30
 msgid "Check timer list for series (SP)"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:193
 msgid "Check timer list from extension menu"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:205
 msgid "Composition of the recording filenames"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:74
 msgid "Configuration"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:212
 msgid "Cut series title on dash"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:261
 msgid "Debug: Log file path"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:258
 msgid "Debug: Print debug messages (Shell)"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:259
 msgid "Debug: Write Log"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:209
 msgid "Default episode"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:208
 msgid "Default season"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:247
 msgid "Directory pattern file"
 msgstr ""
 
+#: ../SeriesPluginRenamer.py:209
 msgid "Do You want to start renaming?"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:465
 #, python-format
 msgid "Do you really want to delete %s?"
 msgstr ""
 
+#: ../Channels.py:291 ../XMLTVBase.py:84
 msgid "Don't edit this manually unless you really know what you are doing"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:161
 msgid "Enable SeriesPlugin"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:274
 msgid "Enable recording debug (Timer log)"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:168
 msgid "Enable support for EPGImport"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:176
 msgid "Enable support for XMLTVImport"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:183
 msgid "Enable support for crossepg"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:246
 msgid "Episode pattern file"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:312
+#, python-brace-format
 msgid ""
-"Episode: {rawepisode:s}\n"
-"{title:s}"
+"Episode: {rawepisode}\n"
+"{title}"
 msgstr ""
 
+#: ../ChannelEditor.py:253 ../ChannelEditor.py:298
 msgid "Error check log file"
 msgstr ""
 
-msgid "Error missing dependency"
-msgstr ""
-
+#: ../SeriesPluginBare.py:48 ../SeriesPluginRenamer.py:295
+#: ../SeriesPluginTimer.py:162
 #, python-format
 msgid "Failed: %s."
 msgstr ""
 
+#: ../SeriesPluginBare.py:67
 msgid "Finished with errors:\n"
 msgstr ""
 
+#: ../ChannelEditor.py:193
 msgid "If You are using SD and HD channels in parallel, You have to match both channels separately!"
 msgstr ""
 
+#: ../SeriesPluginIndependent.py:72
 msgid "Independent mode exception"
 msgstr ""
 
+#: ../ChannelEditor.py:214
 msgid "Load STB channels for bouquet"
 msgstr ""
 
+#: ../ChannelEditor.py:219
 msgid "Load Web channels for bouquet"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:269
 msgid "Location and name of log file"
 msgstr ""
 
+#: ../SeriesPluginBare.py:72
 #, python-format
 msgid "Lookup of %d episodes was successful"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:214
 msgid "Main bouquet for channel editor"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:221
 msgid "Max time drift to match episode"
 msgstr ""
 
+#: ../ChannelEditor.py:162
 msgid "Next bouquet"
 msgstr ""
 
+#: ../ChannelEditor.py:157
 msgid "Next page"
 msgstr ""
 
+#: ../SeriesPluginBare.py:53 ../SeriesPluginRenamer.py:300
+#: ../SeriesPluginTimer.py:170
 msgid "No data available"
 msgstr ""
 
+#: ../SeriesPlugin.py:457
 msgid "No identifier available"
 msgstr ""
 
+#: ../ShowLogScreen.py:59
 msgid "No log file found"
 msgstr ""
 
+#: ../Identifiers/SerienServer.py:91
 msgid "No match found"
 msgstr ""
 
+#: ../Identifiers/SerienServer.py:68
 msgid "No matching channel found."
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:329
 msgid "No matching episode found"
 msgstr ""
 
+#: ../ChannelEditor.py:145 ../SeriesPluginConfiguration.py:82
 msgid "OK"
 msgstr ""
 
+#: ../ChannelEditor.py:159
 msgid "One row down"
 msgstr ""
 
+#: ../ChannelEditor.py:158
 msgid "One row up"
 msgstr ""
 
+#: ../SeriesPlugin.py:457
 msgid "Please check Your installation"
 msgstr ""
 
-msgid "Please install missing python paket manually"
-msgstr ""
-
+#: ../Identifiers/SerienServer.py:68
 msgid "Please open the Channel Editor and add the channel manually."
 msgstr ""
 
+#: ../SeriesPlugin.py:464
 msgid "Please open the channel editor (setup) and match them"
 msgstr ""
 
+#: ../SeriesPlugin.py:122
 msgid "Please update it"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:253
 msgid "Poll Interval (in h)"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:251
 msgid "Poll automatically"
 msgstr ""
 
+#: ../ChannelEditor.py:156
 msgid "Previeous page"
 msgstr ""
 
+#: ../ChannelEditor.py:163
 msgid "Previous bouquet"
 msgstr ""
 
+#: ../ChannelEditor.py:225
 msgid "Problem during loading Webchannels"
 msgstr ""
 
+#: ../TimeoutServerProxy.py:66
 msgid "ProtocolError:"
 msgstr ""
 
+#: ../ShowLogScreen.py:53
 msgid "Reading log file...\n"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:370
 msgid "Really close without saving settings?"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:406
 msgid "Record"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:203
 msgid "Record description episode pattern"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:206
 msgid "Record directory pattern"
 msgstr ""
 
+#: ../SeriesPluginRenamer.py:313
 #, python-format
 msgid "Record rename has been finished with %d errors:\n"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:202
 msgid "Record title episode pattern"
 msgstr ""
 
+#: ../ChannelEditor.py:146
 msgid "Remove"
 msgstr ""
 
+#: ../ChannelEditor.py:374
 #, python-format
 msgid "Remove '%s'?"
 msgstr ""
 
+#: ../ChannelEditor.py:168
 msgid "Remove channel"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:398
 msgid "Rename"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:216
 msgid "Rename files"
 msgstr ""
 
+#: ../plugin.py:29
 msgid "Rename serie(s) (SP)"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:442
 msgid "Renaming failed"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:211
 msgid "Replace special characters in title"
 msgstr ""
 
+#: ../ChannelEditor.py:389
 msgid "Reset channel list?"
 msgstr ""
 
+#: ../ChannelEditor.py:153
 msgid "Reset channels"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:280
 msgid "Retrieving Season, Episode and Title..."
 msgstr ""
 
+#: ../ChannelEditor.py:237
 msgid "STB- / Web-Channel for bouquet:"
 msgstr ""
 
+#: ../ChannelEditor.py:167
 msgid "Save and close"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:315
+#, python-brace-format
 msgid ""
-"Season: {rawseason:s}\n"
-"{title:s}"
+"Season: {rawseason}\n"
+"{title}"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:318
+#, python-brace-format
 msgid ""
-"Season: {rawseason:s}  Episode: {rawepisode:s}\n"
-"{title:s}"
+"Season: {rawseason}  Episode: {rawepisode}\n"
+"{title}"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:266
 msgid "Send debug messages to shell"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:248
 msgid "SerienServer API"
 msgstr ""
 
+#: ../plugin.py:27 ../Skins/InfoScreenFULLHD.xml ../Skins/InfoScreenHD.xml
+#: ../Skins/InfoScreenSD.xml ../Skins/InfoScreenXD.xml
 msgid "SeriesPlugin"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:150
 msgid "SeriesPlugin Info"
 msgstr ""
 
+#: ../Skins/Setup.xml
 msgid "SeriesPlugin Setup"
 msgstr ""
 
+#: ../plugin.py:149 ../plugin.py:162 ../plugin.py:206
 msgid "SeriesPlugin extension exception "
 msgstr ""
 
+#: ../plugin.py:138 ../plugin.py:181 ../spChannelContextMenu.py:62
 msgid "SeriesPlugin info exception "
 msgstr ""
 
+#: ../SeriesPluginBare.py:20
 msgid "SeriesPlugin is deactivated"
 msgstr ""
 
+#: ../plugin.py:237 ../plugin.py:247 ../plugin.py:259 ../plugin.py:270
+#: ../plugin.py:283
 msgid "SeriesPlugin label exception "
 msgstr ""
 
+#: ../plugin.py:196
 msgid "SeriesPlugin renamer exception "
 msgstr ""
 
+#: ../plugin.py:128
 msgid "SeriesPlugin setup exception "
 msgstr ""
 
+#: ../plugin.py:94
 msgid "SeriesPlugin test exception "
 msgstr ""
 
+#: ../plugin.py:310 ../plugin.py:311
 msgid "Setup"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:191
 msgid "Show Info in movie list menu"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:83
 msgid "Show Log"
 msgstr ""
 
+#: ../ShowLogScreen.py:52
 msgid "Show Log file"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:192
 msgid "Show Rename in movie list menu"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:190
 msgid "Show in channel menu"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:189
 msgid "Show in epg menu"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:188
 msgid "Show in extensions menu"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:187
 msgid "Show in info menu"
 msgstr ""
 
+#: ../ChannelEditor.py:151
 msgid "Show popup to add Stb Channel"
 msgstr ""
 
+#: ../plugin.py:28
 msgid "Show series info (SP)"
 msgstr ""
 
+#: ../SeriesPlugin.py:439
 msgid "Skip check because of pattern match"
 msgstr ""
 
+#: ../SeriesPlugin.py:425
 msgid "Skip check during running records"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:225
 msgid "Skip search during records"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:224
 msgid "Skip search if pattern matches"
 msgstr ""
 
+#: ../Identifiers/SerienServer.py:50
 msgid "Skipping lookup because no begin timestamp is specified"
 msgstr ""
 
+#: ../Identifiers/SerienServer.py:54 ../SeriesPluginTimer.py:137
 msgid "Skipping lookup because no channel is specified"
 msgstr ""
 
+#: ../Identifiers/SerienServer.py:46
 msgid "Skipping lookup because no show name is specified"
 msgstr ""
 
+#: ../Channels.py:231
 msgid "Skipping old channels file"
 msgstr ""
 
+#: ../SeriesPluginRenamer.py:187
 msgid "Skipping rename because file already exists"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:85
 msgid "Skipping timer because it is a just play timer"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:67
 msgid "Skipping timer because it is already handled"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:56
 msgid "Skipping timer because it is already in queue"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:103
 #, python-format
 msgid "Skipping timer because it is already modified %s"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:79
 msgid "Skipping timer because it is already running"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:73
 msgid "Skipping timer because it starts in less than 60 seconds"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:113
 msgid "Skipping timer because no event was found"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:234
 msgid "Socket timeout"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:252
 msgid "Startup delay (in min)"
 msgstr ""
 
+#: ../TimeoutServerProxy.py:66
 msgid "Stop is enabled. To reactivate SeriesPlugin, just open the setup"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:235
 msgid "Stop on ProtocolError"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:154
 #, python-format
 msgid "Success: %s"
 msgstr ""
 
+#: ../SeriesPluginInfoScreen.py:440
 msgid "Successfully renamed"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:254
 msgid "Timeout (in min)"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:239
 msgid "Timeout for Error Popups"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:237
 msgid "Timeout for Success Popups"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:238
 msgid "Timeout for Warnings Popups"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:189
 #, python-format
 msgid "Timer rename has been finished with %d errors:\n"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:222
 msgid "Title search depths"
 msgstr ""
 
+#: ../SeriesPluginTimer.py:123
 #, python-format
 msgid "Try to find infos for %s"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:218
 msgid "Use legacy filenames"
 msgstr ""
 
+#: ../SeriesPluginConfiguration.py:267
 msgid "Write debug messages into file"
 msgstr ""
 
+#: ../SeriesPlugin.py:122
 msgid "Your autotimer is deprecated"
 msgstr ""
 
+#: ../DirectoryPatterns.py:75 ../FilePatterns.py:168
 msgid "Your pattern file is corrupt"
 msgstr ""
 
-msgid "{title:s}"
+#: ../SeriesPluginInfoScreen.py:309
+#, python-brace-format
+msgid "{title}"
 msgstr ""

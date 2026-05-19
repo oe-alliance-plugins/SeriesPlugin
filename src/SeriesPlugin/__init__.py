@@ -95,13 +95,15 @@ config.plugins.seriesplugin.serienserver_url = ConfigSelection(choices=url_choic
 #config.plugins.seriesplugin.serienserver_url = ConfigText(default='http://www.serienserver.de/cache/cache.php', fixed_size=False)
 config.plugins.seriesplugin.xmltv_url = ConfigText(default='http://www.serienserver.de/xmltv/wunschliste.xml', fixed_size=False)
 
+PluginLanguageDomain = "SeriesPlugin"
+
 
 def localeInit():
-	gettext.bindtextdomain("SeriesPlugin", resolveFilename(SCOPE_PLUGINS, "Extensions/SeriesPlugin/locale"))
+	gettext.bindtextdomain(PluginLanguageDomain, resolveFilename(SCOPE_PLUGINS, "Extensions/SeriesPlugin/locale"))
 
 
 def _(txt):
-	return gettext.dgettext("SeriesPlugin", txt) if txt else ""
+	return gettext.dgettext(PluginLanguageDomain, txt) if txt else ""
 
 
 localeInit()
